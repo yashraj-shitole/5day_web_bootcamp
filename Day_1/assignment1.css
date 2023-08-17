@@ -1,0 +1,209 @@
+*{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+body::-webkit-scrollbar{
+    display: none;
+  }
+
+/* assignment 1 css */
+.assignment1{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle1{
+
+    height: 400px;
+    width: 500px;
+    background-color: #1de592;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.button{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: none;
+    background-color: #f6f6f6;
+    margin: 20px 0px;
+}
+
+ h1{
+ font-size: 50px;
+ margin: 20px 0px;
+}
+
+h5{
+    font-weight: 500;
+    font-size: 15px;
+    margin: 20px 0px;
+
+}
+h2{
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+
+/* assignment 2 css */
+.assignment2{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle2{
+
+    height: 400px;
+    width: 600px;
+    border: 1px solid #8f8f8f77;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.upper{
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.profilepictures{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.propic{
+    width: 100px;
+    height: 100px;
+    margin: 20px 0px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.lower{
+    width: 500px;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: start;
+    border-top: 1px solid #8f8f8f77;
+}
+
+.lower h2{
+    padding: 25px 0px;
+    color: #2a7ae8;
+}
+
+
+/* assignment 3 css */
+
+.assignment3{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.rectangle3{
+
+    width: 450px;
+    height: 600px;
+    border: 1px solid #8f8f8f77;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.rectangle3 img{
+    height: 40%;
+}
+
+.lock{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lock img{
+    height: 20px;
+    width: 20px;
+    filter: contrast(0.2);
+}
+
+.lock h5{
+    color: #62666a;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+
+.a2lower{
+    height: 60%;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.a2lower h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.a2lower h5{
+    font-size: 18px;
+    color: #5f6367;
+    font-weight: 500;
+    margin-bottom: 25px;
+
+}
+
+.detailsbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border:1px solid #8f8f8f77;
+}
+
+.detailsbtn h2{
+    color: #2a7ae8;
+    font-size: 25px;
+
+}

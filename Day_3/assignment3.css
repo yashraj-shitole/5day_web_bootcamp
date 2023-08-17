@@ -1,0 +1,377 @@
+*{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.main::-webkit-scrollbar{
+    display: none;
+}
+
+.screen{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.main{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height:80vh ;
+    width:80vw ;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* navbar */
+.navbar{
+   
+    padding: 0vw 2vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.221);
+
+}
+.logoimg{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: start;
+
+}
+.logo{
+    height: 75px;
+}
+.centernav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f6f6;
+    padding: 10px 20px;
+    border-radius: 100px;
+    gap: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.395);
+
+}
+.centernavborder{
+    padding: 0px 10px;
+    border-left: 2px solid rgba(128, 128, 128, 0.395);
+    border-right: 2px solid rgba(128, 128, 128, 0.395);
+}
+.centernavright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#ff385c ;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+.rightnav{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+}
+.rightnav a{
+    font-weight: 500;
+}
+
+.rightnavright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f6f6;
+    padding: 5px;
+    border-radius: 100px;
+    gap: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.395);
+}
+
+.hamburger{
+    height: 20px;
+}
+
+.profileimg{
+    height: 30px;
+    filter: contrast(0.1);
+}
+
+
+@media only screen and (max-width: 1070px) {
+
+    .logo{
+        height: 75px;
+    }
+    .centernav{
+        visibility: hidden;
+        width: 0px;
+
+    
+    }
+
+    .rightnav{
+        visibility: hidden;
+    }
+    .rightnavright{
+        visibility: visible;
+        
+    }
+
+    .cardsection{
+        justify-content: center;
+        
+    }
+}
+
+
+/* category row */
+
+.categoryrowmain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0vw 2vw;
+    gap :10px;
+}
+
+.categoryrow::-webkit-scrollbar{
+    display: none;
+}
+
+.categoryrow{
+    overflow-x: scroll;
+    gap: 4vw;
+    width: 80%;
+    padding: 2vh 0vw;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    width: 100%;
+}
+.rowsection{
+    display: flex;
+    width: 50px;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #00000000 ;
+
+}
+.rowimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rowimage img{
+    filter: contrast(0.1);
+    height: 30px;
+}
+.rowsection:hover h6,.rowsection:hover .rowimage img{
+    filter: contrast(1);
+    color: #000;
+}
+
+.rowsection:hover{
+    border-bottom: 3px solid #000000;
+}
+
+.rowsection h6{
+    color: #717171;
+}
+
+.filterbox{
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.395);
+}
+.filterbox img{
+    height: 15px;
+}
+.filterbox a{
+    font-size: 13px;
+}
+
+
+/* searchbar */
+
+.searchbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+.searchbox{
+    width: 700px;
+    height: 50px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.395);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchboxtext{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.toggle{
+    background-color: #71717158;
+    height: 32px;
+    width: 50px;
+    border-radius: 100px;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.toggle:active{
+    background-color: #717171;
+
+    justify-content: end;
+}
+.togglecircle{
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    background-color: #f6f6f6;
+}
+
+.fainttext{
+    color: #717171;
+    font-weight: 400;
+}
+
+.text1{
+    padding-right: 10px;
+    border-right: 1px solid rgba(128, 128, 128, 0.395);
+
+}
+
+/* cardsection */
+
+.cardsection{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    padding: 50px;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 25px;
+    padding-bottom: 35px;
+}
+
+.cardimage1{
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+    border-radius: 25px;
+}
+
+.heart{
+    position: absolute;
+    top: 20px;
+    z-index: 999px;
+    right: 20px;
+    height: 30px;
+}
+
+
+.cardimg:hover .cardarrow{
+    visibility: visible;
+
+}
+.cardarrow{
+    visibility: hidden;
+    position: absolute;
+    right: 20px;
+    top: 135px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: #f6f6f6;
+}
+.cardarrow img{
+height: 18px;
+}
+.info{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+.cardheading{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.star img{
+    height: 20px;
+}
+
